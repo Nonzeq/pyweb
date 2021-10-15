@@ -1,0 +1,23 @@
+{% extends 'baza.html' %}
+
+{% block title %}
+    Заявления
+{% endblock %}
+
+
+
+{% block body %}
+    <div class="container">
+<h1>Все заявления</h1>
+
+    {% for el in articles%}
+        <div class="alert alert-info">
+            <h2>{{ el.name }}</h2>
+            <p>{{ el.work }}</p>
+            <p><b>Дата: {{ el.date.date() }}</b></p>
+        <a href="/posts/{{ el.id }}" class="btn btn-warning">Детальнее</a>
+    </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}

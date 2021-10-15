@@ -1,0 +1,25 @@
+{% extends 'baza.html' %}
+
+{% block title %}
+    {{ article.name  }}
+{% endblock %}
+
+
+
+{% block body %}
+    <div class="container">
+<h1>    {{ article.name  }} </h1>
+
+
+        <div class="alert alert-info">
+            <p>{{ article.work }}</p>
+            <p>{{ article.about }}</p>
+            <p><b>Дата: {{ article.date.date() }}</b></p>
+            <a href="/posts/{{ article.id }}/del" class="btn btn-warning">Удалить</a>
+            <a href="/posts/{{ article.id }}/update" class="btn btn-success">Обновить</a>
+
+    </div>
+
+    </div>
+
+{% endblock %}

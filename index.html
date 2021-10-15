@@ -1,0 +1,51 @@
+{% extends 'baza.html' %}
+
+{% block title %}
+    Главная страница
+{% endblock %}
+
+
+
+{% block body %}
+    <main>
+ <div id="carouselControls" class="carousel slide" data-bs-ride="carousel('cycle')" align="center">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="5" aria-label="Slide 0"></button>
+      </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/img/161101-192130-1606.jpg" class="d-block w-50" alt="s">
+    </div>
+    <div class="carousel-item">
+      <img src="static/img/161101-192138-6914.jpg" class="d-block w-50" alt="s1">
+    </div>
+    <div class="carousel-item">
+      <img src="static/img/161101-192146-4951.jpg" class="d-block w-50" alt="s3">
+    </div>
+      <div class="carousel-item">
+      <img src="static/img/161101-192159-4578.jpg" class="d-block w-50" alt="s4">
+    </div>
+      <div class="carousel-item">
+      <img src="static/img/161101-192212-9527.jpg" class="d-block w-50" alt="s5">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+    </main>
+<div class="container-flгid">
+<div class="container">
+<h2>Вверху на панели вы можите перейти по ссылке "Заявления" и заполнить бланк</h2>
+</div>
+</div>
+{% endblock %}
